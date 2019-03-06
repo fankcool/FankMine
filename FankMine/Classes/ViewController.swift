@@ -12,14 +12,10 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let myView = TestView.loadFromNib()
+        myView.frame = CGRect(x: 50, y: 100, width: 200, height: 100)
+        self.view.addSubview(myView)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 
