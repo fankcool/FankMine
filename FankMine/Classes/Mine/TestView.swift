@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class TestView: MakeUIViewGreatAgain {
+public class TestView: UIView {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
