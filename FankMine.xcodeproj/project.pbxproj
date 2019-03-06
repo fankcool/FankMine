@@ -185,7 +185,6 @@
 				34391D1B222F730C003AB17C /* Sources */,
 				34391D1C222F730C003AB17C /* Frameworks */,
 				34391D1D222F730C003AB17C /* Resources */,
-				0A3DA0BA594436890FB68B2A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -247,26 +246,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0A3DA0BA594436890FB68B2A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-FankMine/Pods-FankMine-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FankMine/Pods-FankMine-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		63D6D8F9383000F61443B1A2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
