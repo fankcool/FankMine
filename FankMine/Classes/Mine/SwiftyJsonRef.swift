@@ -9,11 +9,11 @@
 import UIKit
 import SwiftyJSON
 
-public class SwiftyJsonRef: NSObject {
+public class SwiftyJsonRef {
     
     let jsonString = "[\"key\":\"value\"]"
     
-    public override init() {
+    public init() {
         let json = JSON(jsonString)
         print(json)
     }
