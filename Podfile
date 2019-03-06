@@ -6,7 +6,5 @@ target 'FankMine' do
   use_frameworks!
 
   # Pods for FankMine
-  pod 'SwiftyJSON'
-  pod 'Kingfisher','~> 4.8.1'
 
 end
