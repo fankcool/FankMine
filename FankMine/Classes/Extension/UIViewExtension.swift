@@ -8,11 +8,12 @@
 
 import UIKit
 
-protocol Nibloadable { }
+public protocol Nibloadable { }
 
-extension Nibloadable {
+public extension Nibloadable {
     static func loadFromNib() -> Self {
-        return Bundle.main.loadNibNamed("\(self)", owner: nil, options: nil)?.first as! Self
+        let currentBundle = Bundle(for: self as! AnyClass)
+        return currentBundle.loadNibNamed("\(self)", owner: nil, options: nil)?.first as! Self
     }
 }
 

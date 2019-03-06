@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		341C8321222F85B300C3E238 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 341C831F222F85B300C3E238 /* 2.jpg */; };
+		341C8322222F85B300C3E238 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 341C8320222F85B300C3E238 /* 1.jpg */; };
 		34391D3F222F7661003AB17C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34391D35222F7660003AB17C /* AppDelegate.swift */; };
 		34391D40222F7661003AB17C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34391D37222F7660003AB17C /* ViewController.swift */; };
 		34391D41222F7661003AB17C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34391D39222F7660003AB17C /* Assets.xcassets */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		341C831F222F85B300C3E238 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		341C8320222F85B300C3E238 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 		34391D1F222F730C003AB17C /* FankMine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FankMine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34391D35222F7660003AB17C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34391D37222F7660003AB17C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -44,6 +48,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		341C831E222F85B300C3E238 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				341C831F222F85B300C3E238 /* 2.jpg */,
+				341C8320222F85B300C3E238 /* 1.jpg */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
 		34391D16222F730C003AB17C = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +104,7 @@
 		34391D38222F7660003AB17C /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				341C831E222F85B300C3E238 /* Image */,
 				34391D39222F7660003AB17C /* Assets.xcassets */,
 				34391D3A222F7660003AB17C /* LaunchScreen.storyboard */,
 				34391D3C222F7660003AB17C /* Main.storyboard */,
@@ -175,11 +189,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				341C8321222F85B300C3E238 /* 2.jpg in Resources */,
 				34391D44222F7661003AB17C /* Info.plist in Resources */,
 				34391D43222F7661003AB17C /* Main.storyboard in Resources */,
 				34391D41222F7661003AB17C /* Assets.xcassets in Resources */,
 				34391D49222F769B003AB17C /* TestView.xib in Resources */,
 				34391D42222F7661003AB17C /* LaunchScreen.storyboard in Resources */,
+				341C8322222F85B300C3E238 /* 1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
