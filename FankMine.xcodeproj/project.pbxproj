@@ -19,6 +19,7 @@
 		34391D49222F769B003AB17C /* TestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34391D48222F769B003AB17C /* TestView.xib */; };
 		34391D4C222F7835003AB17C /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34391D4B222F7835003AB17C /* UIViewExtension.swift */; };
 		34391D50222F7B4B003AB17C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34391D4F222F7B4B003AB17C /* Extensions.swift */; };
+		B7EA2A27AD052EF92EC7BBFF /* Pods_FankMine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C393D8718C3513FF8008156F /* Pods_FankMine.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,9 @@
 		34391D48222F769B003AB17C /* TestView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestView.xib; sourceTree = "<group>"; };
 		34391D4B222F7835003AB17C /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		34391D4F222F7B4B003AB17C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		56589668328F6284DCB45AF1 /* Pods-FankMine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FankMine.release.xcconfig"; path = "Pods/Target Support Files/Pods-FankMine/Pods-FankMine.release.xcconfig"; sourceTree = "<group>"; };
+		C393D8718C3513FF8008156F /* Pods_FankMine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FankMine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD0BC0A60986380839FFB714 /* Pods-FankMine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FankMine.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FankMine/Pods-FankMine.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7EA2A27AD052EF92EC7BBFF /* Pods_FankMine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +67,8 @@
 			children = (
 				34391D21222F730C003AB17C /* FankMine */,
 				34391D20222F730C003AB17C /* Products */,
+				AEB8F7A874829CF7E44BB46C /* Pods */,
+				4219C8F0601BE7B4B2F1364B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,6 +138,23 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		4219C8F0601BE7B4B2F1364B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C393D8718C3513FF8008156F /* Pods_FankMine.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AEB8F7A874829CF7E44BB46C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CD0BC0A60986380839FFB714 /* Pods-FankMine.debug.xcconfig */,
+				56589668328F6284DCB45AF1 /* Pods-FankMine.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,6 +162,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 34391D31222F730D003AB17C /* Build configuration list for PBXNativeTarget "FankMine" */;
 			buildPhases = (
+				63D6D8F9383000F61443B1A2 /* [CP] Check Pods Manifest.lock */,
 				34391D1B222F730C003AB17C /* Sources */,
 				34391D1C222F730C003AB17C /* Frameworks */,
 				34391D1D222F730C003AB17C /* Resources */,
@@ -200,6 +225,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		63D6D8F9383000F61443B1A2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FankMine-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		34391D1B222F730C003AB17C /* Sources */ = {
@@ -352,6 +398,7 @@
 		};
 		34391D32222F730D003AB17C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD0BC0A60986380839FFB714 /* Pods-FankMine.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -371,6 +418,7 @@
 		};
 		34391D33222F730D003AB17C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56589668328F6284DCB45AF1 /* Pods-FankMine.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

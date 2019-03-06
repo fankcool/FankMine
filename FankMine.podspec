@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "FankMine"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "FankMine private cocoapods project - summary."
 
   # This description is used to generate tags and improve search results.
@@ -106,7 +106,8 @@ Pod::Spec.new do |s|
   #
 
   # s.resource  = "icon.png"
-  # s.resources = "Resources/*.png"
+  # s.resources = "FankMine/Assets/*"
+  s.resources = "FankMine/Assets/*.xib", "FankMine/Assets/Image/*.jpg"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 

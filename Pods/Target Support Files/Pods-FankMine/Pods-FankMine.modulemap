@@ -1,0 +1,6 @@
+framework module Pods_FankMine {
+  umbrella header "Pods-FankMine-umbrella.h"
+
+  export *
+  module * { export * }
+}
