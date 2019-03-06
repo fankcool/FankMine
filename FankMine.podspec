@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "FankMine"
-  s.version      = "0.0.5"
+  s.version      = "0.0.6"
   s.summary      = "FankMine private cocoapods project - summary."
 
   # This description is used to generate tags and improve search results.
@@ -135,5 +135,23 @@ Pod::Spec.new do |s|
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
+
+  # 第三方依赖，所有库都依赖如下。也可以设置子库
+  # s.dependency 'Kingfisher','~> 4.8.1'
+  # s.dependency 'SwiftyJSON'
+
+  # 设置子库格式
+  # s.subspec '子库名称' do |别名|
+  # end
+
+  s.subspec 'Mine' do |c|
+  c.source_files = 'FankMine/Classes/Mine/*'
+  c.dependency 'SwiftyJSON'
+  end
+
+  s.subspec 'Extension' do |c|
+  c.source_files = 'FankMine/Classes/Extension/*'
+  c.dependency 'Kingfisher','~> 4.8.1'
+  end
 
 end

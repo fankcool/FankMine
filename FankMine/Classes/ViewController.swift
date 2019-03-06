@@ -20,6 +20,8 @@ class ViewController: UIViewController {
         self.view.addSubview(myView)
         
         self.imageView.image = ImageResource.loadImage(name: "2")
+        
+        SwiftyJsonRef()
     }
 }
 

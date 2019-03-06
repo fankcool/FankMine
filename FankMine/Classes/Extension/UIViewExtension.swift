@@ -17,9 +17,9 @@ enum ImageType : String {
     }
 }
 
-class ImageResource {
+public class ImageResource {
     
-    class func loadImage(name:String) -> UIImage {
+    public class func loadImage(name:String) -> UIImage {
         var path : String?
         let currentBundle = Bundle(for: self)
         if name.contains(".") {

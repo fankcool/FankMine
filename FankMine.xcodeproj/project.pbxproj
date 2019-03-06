@@ -10,6 +10,7 @@
 		341C8329222FA14100C3E238 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 341C8326222FA14100C3E238 /* 2.jpg */; };
 		341C832A222FA14100C3E238 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 341C8327222FA14100C3E238 /* 1.jpg */; };
 		341C832D222FA19D00C3E238 /* TestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 341C832C222FA19D00C3E238 /* TestView.xib */; };
+		341C8331222FB57300C3E238 /* SwiftyJsonRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341C8330222FB57300C3E238 /* SwiftyJsonRef.swift */; };
 		34391D3F222F7661003AB17C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34391D35222F7660003AB17C /* AppDelegate.swift */; };
 		34391D40222F7661003AB17C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34391D37222F7660003AB17C /* ViewController.swift */; };
 		34391D41222F7661003AB17C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34391D39222F7660003AB17C /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 		341C8326222FA14100C3E238 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
 		341C8327222FA14100C3E238 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 		341C832C222FA19D00C3E238 /* TestView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestView.xib; sourceTree = "<group>"; };
+		341C8330222FB57300C3E238 /* SwiftyJsonRef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyJsonRef.swift; sourceTree = "<group>"; };
 		34391D1F222F730C003AB17C /* FankMine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FankMine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34391D35222F7660003AB17C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34391D37222F7660003AB17C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				34391D46222F768F003AB17C /* TestView.swift */,
+				341C8330222FB57300C3E238 /* SwiftyJsonRef.swift */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 				34391D1B222F730C003AB17C /* Sources */,
 				34391D1C222F730C003AB17C /* Frameworks */,
 				34391D1D222F730C003AB17C /* Resources */,
+				0A3DA0BA594436890FB68B2A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -243,6 +247,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0A3DA0BA594436890FB68B2A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FankMine/Pods-FankMine-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FankMine/Pods-FankMine-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		63D6D8F9383000F61443B1A2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -269,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				34391D50222F7B4B003AB17C /* Extensions.swift in Sources */,
+				341C8331222FB57300C3E238 /* SwiftyJsonRef.swift in Sources */,
 				34391D47222F768F003AB17C /* TestView.swift in Sources */,
 				34391D40222F7661003AB17C /* ViewController.swift in Sources */,
 				34391D4C222F7835003AB17C /* UIViewExtension.swift in Sources */,
