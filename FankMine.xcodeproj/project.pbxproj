@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		341C8321222F85B300C3E238 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 341C831F222F85B300C3E238 /* 2.jpg */; };
-		341C8322222F85B300C3E238 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 341C8320222F85B300C3E238 /* 1.jpg */; };
+		341C8329222FA14100C3E238 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 341C8326222FA14100C3E238 /* 2.jpg */; };
+		341C832A222FA14100C3E238 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 341C8327222FA14100C3E238 /* 1.jpg */; };
+		341C832D222FA19D00C3E238 /* TestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 341C832C222FA19D00C3E238 /* TestView.xib */; };
 		34391D3F222F7661003AB17C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34391D35222F7660003AB17C /* AppDelegate.swift */; };
 		34391D40222F7661003AB17C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34391D37222F7660003AB17C /* ViewController.swift */; };
 		34391D41222F7661003AB17C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34391D39222F7660003AB17C /* Assets.xcassets */; };
@@ -16,15 +17,15 @@
 		34391D43222F7661003AB17C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34391D3C222F7660003AB17C /* Main.storyboard */; };
 		34391D44222F7661003AB17C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 34391D3E222F7660003AB17C /* Info.plist */; };
 		34391D47222F768F003AB17C /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34391D46222F768F003AB17C /* TestView.swift */; };
-		34391D49222F769B003AB17C /* TestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34391D48222F769B003AB17C /* TestView.xib */; };
 		34391D4C222F7835003AB17C /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34391D4B222F7835003AB17C /* UIViewExtension.swift */; };
 		34391D50222F7B4B003AB17C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34391D4F222F7B4B003AB17C /* Extensions.swift */; };
 		B7EA2A27AD052EF92EC7BBFF /* Pods_FankMine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C393D8718C3513FF8008156F /* Pods_FankMine.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		341C831F222F85B300C3E238 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
-		341C8320222F85B300C3E238 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		341C8326222FA14100C3E238 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		341C8327222FA14100C3E238 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		341C832C222FA19D00C3E238 /* TestView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestView.xib; sourceTree = "<group>"; };
 		34391D1F222F730C003AB17C /* FankMine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FankMine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34391D35222F7660003AB17C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34391D37222F7660003AB17C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -33,7 +34,6 @@
 		34391D3D222F7660003AB17C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		34391D3E222F7660003AB17C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34391D46222F768F003AB17C /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
-		34391D48222F769B003AB17C /* TestView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestView.xib; sourceTree = "<group>"; };
 		34391D4B222F7835003AB17C /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		34391D4F222F7B4B003AB17C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		56589668328F6284DCB45AF1 /* Pods-FankMine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FankMine.release.xcconfig"; path = "Pods/Target Support Files/Pods-FankMine/Pods-FankMine.release.xcconfig"; sourceTree = "<group>"; };
@@ -53,13 +53,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		341C831E222F85B300C3E238 /* Image */ = {
+		341C8323222FA14100C3E238 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				341C831F222F85B300C3E238 /* 2.jpg */,
-				341C8320222F85B300C3E238 /* 1.jpg */,
+				341C832B222FA19D00C3E238 /* Nib */,
+				341C8325222FA14100C3E238 /* Image */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		341C8325222FA14100C3E238 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				341C8326222FA14100C3E238 /* 2.jpg */,
+				341C8327222FA14100C3E238 /* 1.jpg */,
 			);
 			path = Image;
+			sourceTree = "<group>";
+		};
+		341C832B222FA19D00C3E238 /* Nib */ = {
+			isa = PBXGroup;
+			children = (
+				341C832C222FA19D00C3E238 /* TestView.xib */,
+			);
+			path = Nib;
 			sourceTree = "<group>";
 		};
 		34391D16222F730C003AB17C = {
@@ -83,6 +100,7 @@
 		34391D21222F730C003AB17C /* FankMine */ = {
 			isa = PBXGroup;
 			children = (
+				341C8323222FA14100C3E238 /* Assets */,
 				34391D36222F7660003AB17C /* Classes */,
 				34391D38222F7660003AB17C /* Resource */,
 			);
@@ -111,7 +129,6 @@
 		34391D38222F7660003AB17C /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				341C831E222F85B300C3E238 /* Image */,
 				34391D39222F7660003AB17C /* Assets.xcassets */,
 				34391D3A222F7660003AB17C /* LaunchScreen.storyboard */,
 				34391D3C222F7660003AB17C /* Main.storyboard */,
@@ -124,7 +141,6 @@
 			isa = PBXGroup;
 			children = (
 				34391D46222F768F003AB17C /* TestView.swift */,
-				34391D48222F769B003AB17C /* TestView.xib */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -214,13 +230,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				341C8321222F85B300C3E238 /* 2.jpg in Resources */,
+				341C832D222FA19D00C3E238 /* TestView.xib in Resources */,
 				34391D44222F7661003AB17C /* Info.plist in Resources */,
+				341C8329222FA14100C3E238 /* 2.jpg in Resources */,
 				34391D43222F7661003AB17C /* Main.storyboard in Resources */,
 				34391D41222F7661003AB17C /* Assets.xcassets in Resources */,
-				34391D49222F769B003AB17C /* TestView.xib in Resources */,
+				341C832A222FA14100C3E238 /* 1.jpg in Resources */,
 				34391D42222F7661003AB17C /* LaunchScreen.storyboard in Resources */,
-				341C8322222F85B300C3E238 /* 1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

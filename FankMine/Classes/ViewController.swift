@@ -10,12 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var imageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let myView = TestView.loadFromNib()
         myView.frame = CGRect(x: 50, y: 100, width: 200, height: 100)
         self.view.addSubview(myView)
+        
+        self.imageView.image = ImageResource.loadImage(name: "2")
     }
 }
 

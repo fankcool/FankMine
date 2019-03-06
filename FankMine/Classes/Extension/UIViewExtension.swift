@@ -8,16 +8,43 @@
 
 import UIKit
 
-public protocol Nibloadable { }
+enum ImageType : String {
+    case JPG = ".jpg"
+    case PNG = ".png"
+    
+    var value : String {
+        return self.rawValue
+    }
+}
 
-public extension Nibloadable {
+class ImageResource {
+    
+    class func loadImage(name:String) -> UIImage {
+        var path : String?
+        let currentBundle = Bundle(for: self)
+        if name.contains(".") {
+            path = currentBundle.path(forResource: name, ofType: nil)
+        } else {
+            if let jpgPath = currentBundle.path(forResource: name + ImageType.JPG.value, ofType: nil) {
+                path = jpgPath
+            } else if let pngPath = currentBundle.path(forResource: name + ImageType.PNG.value, ofType: nil) {
+                path = pngPath
+            }
+        }
+        return UIImage(contentsOfFile: path!)!
+    }
+}
+
+public protocol NibLoadable { }
+
+public extension NibLoadable {
     static func loadFromNib() -> Self {
         let currentBundle = Bundle(for: self as! AnyClass)
         return currentBundle.loadNibNamed("\(self)", owner: nil, options: nil)?.first as! Self
     }
 }
 
-extension UIView : Nibloadable {
+extension UIView : NibLoadable {
     public var origin: CGPoint {
         get {
             return self.frame.origin
