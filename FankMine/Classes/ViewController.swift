@@ -21,7 +21,13 @@ class ViewController: UIViewController {
         
         self.imageView.image = ImageResource.loadImage(name: "2")
         
-        SwiftyJsonRef()
+//        SwiftyJsonRef()
+    }
+    
+    @IBAction func pushToNext(_ sender: UIBarButtonItem) {
+        if let vc = MineViewController.loadFromStoryboard() {
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
     }
 }
 

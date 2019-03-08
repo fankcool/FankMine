@@ -7,14 +7,14 @@
 //
 
 import UIKit
-import SwiftyJSON
+//import SwiftyJSON
 
 public class SwiftyJsonRef {
     
     let jsonString = "[\"key\":\"value\"]"
     
     public init() {
-        let json = JSON(jsonString)
-        print(json)
+//        let json = JSON(jsonString)
+//        print(json)
     }
 }

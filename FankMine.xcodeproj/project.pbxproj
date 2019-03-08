@@ -11,6 +11,8 @@
 		341C832A222FA14100C3E238 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 341C8327222FA14100C3E238 /* 1.jpg */; };
 		341C832D222FA19D00C3E238 /* TestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 341C832C222FA19D00C3E238 /* TestView.xib */; };
 		341C8331222FB57300C3E238 /* SwiftyJsonRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341C8330222FB57300C3E238 /* SwiftyJsonRef.swift */; };
+		341C8333223028B200C3E238 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341C8332223028B200C3E238 /* MineViewController.swift */; };
+		341C8336223028E200C3E238 /* MineViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 341C8335223028E200C3E238 /* MineViewController.storyboard */; };
 		34391D3F222F7661003AB17C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34391D35222F7660003AB17C /* AppDelegate.swift */; };
 		34391D40222F7661003AB17C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34391D37222F7660003AB17C /* ViewController.swift */; };
 		34391D41222F7661003AB17C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34391D39222F7660003AB17C /* Assets.xcassets */; };
@@ -28,6 +30,8 @@
 		341C8327222FA14100C3E238 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 		341C832C222FA19D00C3E238 /* TestView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestView.xib; sourceTree = "<group>"; };
 		341C8330222FB57300C3E238 /* SwiftyJsonRef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyJsonRef.swift; sourceTree = "<group>"; };
+		341C8332223028B200C3E238 /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
+		341C8335223028E200C3E238 /* MineViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MineViewController.storyboard; sourceTree = "<group>"; };
 		34391D1F222F730C003AB17C /* FankMine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FankMine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34391D35222F7660003AB17C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34391D37222F7660003AB17C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +64,7 @@
 			children = (
 				341C832B222FA19D00C3E238 /* Nib */,
 				341C8325222FA14100C3E238 /* Image */,
+				341C8334223028C000C3E238 /* Storyboard */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -79,6 +84,14 @@
 				341C832C222FA19D00C3E238 /* TestView.xib */,
 			);
 			path = Nib;
+			sourceTree = "<group>";
+		};
+		341C8334223028C000C3E238 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				341C8335223028E200C3E238 /* MineViewController.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 		34391D16222F730C003AB17C = {
@@ -144,6 +157,7 @@
 			children = (
 				34391D46222F768F003AB17C /* TestView.swift */,
 				341C8330222FB57300C3E238 /* SwiftyJsonRef.swift */,
+				341C8332223028B200C3E238 /* MineViewController.swift */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -237,6 +251,7 @@
 				34391D44222F7661003AB17C /* Info.plist in Resources */,
 				341C8329222FA14100C3E238 /* 2.jpg in Resources */,
 				34391D43222F7661003AB17C /* Main.storyboard in Resources */,
+				341C8336223028E200C3E238 /* MineViewController.storyboard in Resources */,
 				34391D41222F7661003AB17C /* Assets.xcassets in Resources */,
 				341C832A222FA14100C3E238 /* 1.jpg in Resources */,
 				34391D42222F7661003AB17C /* LaunchScreen.storyboard in Resources */,
@@ -274,6 +289,7 @@
 				34391D50222F7B4B003AB17C /* Extensions.swift in Sources */,
 				341C8331222FB57300C3E238 /* SwiftyJsonRef.swift in Sources */,
 				34391D47222F768F003AB17C /* TestView.swift in Sources */,
+				341C8333223028B200C3E238 /* MineViewController.swift in Sources */,
 				34391D40222F7661003AB17C /* ViewController.swift in Sources */,
 				34391D4C222F7835003AB17C /* UIViewExtension.swift in Sources */,
 				34391D3F222F7661003AB17C /* AppDelegate.swift in Sources */,
