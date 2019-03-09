@@ -10,5 +10,6 @@ target 'FankMine' do
   pod 'Kingfisher','~> 4.8.1'
   
   pod 'CTMediator'
+  pod 'FankExtension'
 
 end

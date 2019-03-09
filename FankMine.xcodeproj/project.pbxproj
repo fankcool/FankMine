@@ -20,7 +20,7 @@
 		34391D43222F7661003AB17C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34391D3C222F7660003AB17C /* Main.storyboard */; };
 		34391D44222F7661003AB17C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 34391D3E222F7660003AB17C /* Info.plist */; };
 		34391D47222F768F003AB17C /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34391D46222F768F003AB17C /* TestView.swift */; };
-		34391D4C222F7835003AB17C /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34391D4B222F7835003AB17C /* UIViewExtension.swift */; };
+		34391D4C222F7835003AB17C /* ImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34391D4B222F7835003AB17C /* ImageResource.swift */; };
 		34391D50222F7B4B003AB17C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34391D4F222F7B4B003AB17C /* Extensions.swift */; };
 		34AB90272233DC3D00B5B368 /* Target_FankMine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AB90262233DC3D00B5B368 /* Target_FankMine.swift */; };
 		B7EA2A27AD052EF92EC7BBFF /* Pods_FankMine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C393D8718C3513FF8008156F /* Pods_FankMine.framework */; };
@@ -41,7 +41,7 @@
 		34391D3D222F7660003AB17C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		34391D3E222F7660003AB17C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34391D46222F768F003AB17C /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
-		34391D4B222F7835003AB17C /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		34391D4B222F7835003AB17C /* ImageResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResource.swift; sourceTree = "<group>"; };
 		34391D4F222F7B4B003AB17C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		34AB90262233DC3D00B5B368 /* Target_FankMine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Target_FankMine.swift; sourceTree = "<group>"; };
 		56589668328F6284DCB45AF1 /* Pods-FankMine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FankMine.release.xcconfig"; path = "Pods/Target Support Files/Pods-FankMine/Pods-FankMine.release.xcconfig"; sourceTree = "<group>"; };
@@ -168,7 +168,7 @@
 		34391D4A222F77F0003AB17C /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				34391D4B222F7835003AB17C /* UIViewExtension.swift */,
+				34391D4B222F7835003AB17C /* ImageResource.swift */,
 				34391D4F222F7B4B003AB17C /* Extensions.swift */,
 			);
 			path = Extension;
@@ -273,12 +273,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-FankMine/Pods-FankMine-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/CTMediator/CTMediator.framework",
+				"${BUILT_PRODUCTS_DIR}/FankExtension/FankExtension.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CTMediator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FankExtension.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
@@ -317,7 +319,7 @@
 				34391D47222F768F003AB17C /* TestView.swift in Sources */,
 				341C8333223028B200C3E238 /* MineViewController.swift in Sources */,
 				34391D40222F7661003AB17C /* ViewController.swift in Sources */,
-				34391D4C222F7835003AB17C /* UIViewExtension.swift in Sources */,
+				34391D4C222F7835003AB17C /* ImageResource.swift in Sources */,
 				34391D3F222F7661003AB17C /* AppDelegate.swift in Sources */,
 				34AB90272233DC3D00B5B368 /* Target_FankMine.swift in Sources */,
 			);
