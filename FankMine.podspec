@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "FankMine"
-  s.version      = "0.0.10"
+  s.version      = "0.0.11"
   s.summary      = "FankMine private cocoapods project - summary."
 
   # This description is used to generate tags and improve search results.
@@ -91,8 +91,8 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "FankMine/Classes/*.swift", "FankMine/Classes/*/*.swift"
-  s.exclude_files = "Classes/Exclude"
+  s.source_files  = "FankMine/Classes/*.swift", "FankMine/Classes/**/*.swift"
+  s.exclude_files = "FankMine/Classes/AppConfig"
 
   # s.public_header_files = "Classes/**/*.h"
 
