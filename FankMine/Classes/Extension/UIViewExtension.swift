@@ -38,9 +38,9 @@ public class ImageResource {
 public protocol StoryboardLoadable { }
 
 public extension StoryboardLoadable {
-    static func loadFromStoryboard() -> Self? {
+    static func loadFromStoryboard() -> Self {
         let currentBundle = Bundle(for: self as! AnyClass)
-        return UIStoryboard(name: "\(self)", bundle: currentBundle).instantiateInitialViewController() as? Self
+        return UIStoryboard(name: "\(self)", bundle: currentBundle).instantiateInitialViewController() as! Self
     }
 }
 

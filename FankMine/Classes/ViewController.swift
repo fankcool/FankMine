@@ -25,9 +25,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func pushToNext(_ sender: UIBarButtonItem) {
-        if let vc = MineViewController.loadFromStoryboard() {
-            self.navigationController?.pushViewController(vc, animated: true)
-        }
+        let vc = MineViewController.loadFromStoryboard()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 

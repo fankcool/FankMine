@@ -22,6 +22,7 @@
 		34391D47222F768F003AB17C /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34391D46222F768F003AB17C /* TestView.swift */; };
 		34391D4C222F7835003AB17C /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34391D4B222F7835003AB17C /* UIViewExtension.swift */; };
 		34391D50222F7B4B003AB17C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34391D4F222F7B4B003AB17C /* Extensions.swift */; };
+		34AB90272233DC3D00B5B368 /* Target_FankMine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AB90262233DC3D00B5B368 /* Target_FankMine.swift */; };
 		B7EA2A27AD052EF92EC7BBFF /* Pods_FankMine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C393D8718C3513FF8008156F /* Pods_FankMine.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +43,7 @@
 		34391D46222F768F003AB17C /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		34391D4B222F7835003AB17C /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		34391D4F222F7B4B003AB17C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		34AB90262233DC3D00B5B368 /* Target_FankMine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Target_FankMine.swift; sourceTree = "<group>"; };
 		56589668328F6284DCB45AF1 /* Pods-FankMine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FankMine.release.xcconfig"; path = "Pods/Target Support Files/Pods-FankMine/Pods-FankMine.release.xcconfig"; sourceTree = "<group>"; };
 		C393D8718C3513FF8008156F /* Pods_FankMine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FankMine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD0BC0A60986380839FFB714 /* Pods-FankMine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FankMine.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FankMine/Pods-FankMine.debug.xcconfig"; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				34391D34222F7660003AB17C /* AppConfig */,
 				34391D45222F7679003AB17C /* Mine */,
 				34391D37222F7660003AB17C /* ViewController.swift */,
+				34AB90262233DC3D00B5B368 /* Target_FankMine.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 				34391D40222F7661003AB17C /* ViewController.swift in Sources */,
 				34391D4C222F7835003AB17C /* UIViewExtension.swift in Sources */,
 				34391D3F222F7661003AB17C /* AppDelegate.swift in Sources */,
+				34AB90272233DC3D00B5B368 /* Target_FankMine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
