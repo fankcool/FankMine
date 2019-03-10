@@ -12,17 +12,20 @@ public protocol StoryboardLoadable { }
 
 public extension StoryboardLoadable {
     
-    static func loadFromStoryboard() -> Self? {
+    // 此处感觉返回个可选值不方便，但是不反悔可选值又有可能因为没找到控制器而崩溃，如何权衡？？
+    static func loadFromStoryboard(name: String = "\(Self.self)") -> Self? {
         
         var sef : Self?
         
         let currentBundle = Bundle(for: self as! AnyClass)
         
-        if let vc = UIStoryboard(name: "\(String(describing: self))", bundle: currentBundle).instantiateInitialViewController() {
+        let storyboard = UIStoryboard(name: name, bundle: currentBundle)
+        
+        // 必须加后面的isKindOf判断，不然可能把sb里的初始化控制器当成了目标控制器返回
+        if let vc = storyboard.instantiateInitialViewController(), vc.isKind(of: self as! AnyClass) {
             sef = vc as? Self
         } else {
-            let vc = UIStoryboard(name: "\(String(describing: self))", bundle: currentBundle).instantiateViewController(withIdentifier: "\(String(describing: self))")
-            sef = vc as? Self
+            sef = storyboard.instantiateViewController(withIdentifier: "\(String(describing: self))") as? Self
         }
         
         return sef

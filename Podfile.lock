@@ -1,6 +1,6 @@
 PODS:
   - CTMediator (25)
-  - FankExtension (0.0.1)
+  - FankExtension (0.0.5)
   - Kingfisher (4.8.1)
   - SwiftyJSON (4.2.0)
 
@@ -19,10 +19,10 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   CTMediator: 830c1fc204b3a6abf2a059510c7380f56343da0f
-  FankExtension: e191c5235b8f4a285b1cad24bae5e2616514e081
+  FankExtension: 9ad68d371c54e08d6d805eb8cc8a8a81783cc135
   Kingfisher: 868c1149679a7ab6869be118faa9b5aed154aaf0
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
 
-PODFILE CHECKSUM: 09d7f3e7d37b9742f135d05aca73bd54b3158e4c
+PODFILE CHECKSUM: 2f0cc752ad9492cc7c315bf36e29de95b7490a37
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.1
