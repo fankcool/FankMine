@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "FankMine"
-  s.version      = "0.0.19"
+  s.version      = "0.0.20"
   s.summary      = "FankMine private cocoapods project - summary."
 
   # This description is used to generate tags and improve search results.
@@ -91,6 +91,9 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
+  # **/*表示Classes目录及其子目录下所有文件，如果有多个目录下则用逗号分开，如果需要在项目中分组显示，这里也要做相应的设置
+  # s.source_files = 'Pod/Classes/**/*'
+
   s.source_files  = "FankMine/Classes/*.swift", "FankMine/Classes/Mine/*.swift", "FankMine/Classes/Extension/*.swift"
   s.exclude_files = "FankMine/Classes/AppConfig"
 
@@ -148,7 +151,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'Mine' do |c|
   c.source_files = 'FankMine/Classes/Mine/*'
-  c.dependency 'SwiftyJSON'
+  c.dependency 'SwiftyJSON', '4.1.0'
   end
 
   s.subspec 'Extension' do |c|
